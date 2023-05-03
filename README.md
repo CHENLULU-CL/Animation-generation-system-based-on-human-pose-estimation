@@ -10,7 +10,12 @@ In current research, human skeleton models and pose estimation models are usuall
 This work aims to apply the current state-of-the-art 3D pose estimation model directly to the skeleton model, resulting in an integrated system that generates animations from video without the need for communication between separate processes. Specifically, we use an off-the-shelf 3D human pose estimation model trained by PyTorch, and export it to Unity using model migration. By estimating the changes of each human joint position in the video and calculating the rotation vector, we control the generation of character animations in Unity.
 
 ## Overview 
-
+<img src="https://github.com/CHENLULU-CL/Animation-generation-system-based-on-human-pose-estimation/blob/main/Figs/Framework.png" alt="image description" width=60%>
+<img src="https://github.com/CHENLULU-CL/Animation-generation-system-based-on-human-pose-estimation/blob/main/Figs/loading1.png" alt="image description" width=90%>
+<div style="display:flex;">
+  <img src="https://github.com/CHENLULU-CL/Animation-generation-system-based-on-human-pose-estimation/blob/main/Figs/2.png" alt="image description" width=40% margin-right=10%;>
+  <img src="https://github.com/CHENLULU-CL/Animation-generation-system-based-on-human-pose-estimation/blob/main/Figs/4.png" alt="image description" width=40% margin-left=10%;>
+</div>
 
 ## 3D Human Pose Estimation
 We employ simple but effective technologies for human pose estimation, namely SimpleBaseline and VideoPose3D. SimpleBaseline estimates 2D poses from images, while VideoPose3D generates 3D poses from the 2D ones. These technologies work separately but in tandem to achieve accurate pose estimation.
